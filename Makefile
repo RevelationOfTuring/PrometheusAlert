@@ -1,6 +1,6 @@
 pkgs	= $(shell go list ./... | grep -v vendor/)
 
-DOCKER_IMAGE_NAME ?= feiyu563/prometheus-alert
+DOCKER_IMAGE_NAME ?= michael/prometheus-alert
 
 BRANCH 		?= $(shell git rev-parse --abbrev-ref HEAD)
 BUILDDATE   ?= $(shell date -I'seconds')
